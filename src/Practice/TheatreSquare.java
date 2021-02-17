@@ -17,7 +17,7 @@ public class TheatreSquare {
         double n = in.nextDouble();
         double m = in.nextDouble();
         double a = in.nextDouble();
-        int ans = (int)(Math.ceil(n/a)*Math.ceil(m/a));
+        long ans = (long)(Math.ceil(n/a)*Math.ceil(m/a));
         System.out.println(ans);
     }
 }
