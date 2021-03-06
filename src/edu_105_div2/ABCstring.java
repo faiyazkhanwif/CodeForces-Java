@@ -34,7 +34,7 @@ public class ABCstring {
             if (c[i] == '(' || c[i] == '[' || c[i] == '{') {
                 myStack.push(c[i]);
             } else if (c[i] == ')' || c[i] == ']' || c[i] == '}') {
-                if (myStack.peek()==null) {
+                if (myStack.isEmpty()) {
                     return false;
                 }
                 if (matchingPeer(myStack.peek(), c[i]) == true) {
