@@ -10,17 +10,12 @@ package Practice;
  * @author faiya
  */
 public class Test {
-    static int countPositive(int[] x){
-        int count = 0;
-        for (int i = 0; i < x.length; i++) {
-            if (x[i]%2!=0 || x[i]>0) {
-                count++;
-            }
-        }
-        return count;
-    }
+
     public static void main(String[] args) {
-        int [] x = {-3, -2, 0, 1, 4};
-        System.out.println(countPositive(x));
+        System.out.println("Addition of two numbers!");
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
     }
 }
